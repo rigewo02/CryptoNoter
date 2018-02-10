@@ -81,7 +81,7 @@ if (ssl) {
 // Miner Proxy Srv
 var srv = new WebSocket.Server({
     server: web,
-    path: "/proxy",
+    path: "/",
     maxPayload: 256
 });
 srv.on('connection', (ws) => {
